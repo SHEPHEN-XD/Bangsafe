@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BANGSAFE — বাংলাদেশ সাইবার শিল্ড</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome" class="overlay">
+    <div class="card">
+      <div class="name">MOHAMMAD SHEIKH SAMIR <span class="flag">🇧🇩</span></div>
+      <div class="subtitle">BANGSAFE — National CyberShield</div>
+      <div class="sm">ডিফেন্স / সাইবার সচেতনা • Cyber Safety for Bangladesh</div>
+      <button id="enter">ENTER PROJECT</button>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <header>
+      <div class="brand">BANGSAFE <span class="tick">✔</span></div>
+      <div class="api-setup">
+        <input id="apiInput" placeholder="Backend URL (e.g. https://your-backend.onrender.com)" />
+        <button id="saveApi">Save</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <h2>Scan একটি URL / লিংক স্ক্যান করুন</h2>
+        <div class="scanbox card">
+          <input id="url" placeholder="https://example.com অথবা example.com" />
+          <div class="row">
+            <button id="scanBtn">SCAN</button>
+            <button id="reportBtn" class="ghost">Report এই URL</button>
+          </div>
+          <div id="result" class="result card">Scan result এখানে দেখানো হবে</div>
+        </div>
+
+        <h3>Live Threat Feed (Reports)</h3>
+        <div id="feed" class="feed card">লোড হচ্ছে...</div>
+      </section>
+
+      <aside class="right card">
+        <h3>Map (ডেমো)</h3>
+        <div id="map" class="map">Map placeholder — পরে যুক্ত করুন</div>
+
+        <h4>About</h4>
+        <p>কোনো সন্দেহজনক লিংক হলে স্ক্যান করে রিপোর্ট করুন — BANGSAFE টিম পরে ভেরিফাই করবে।</p>
+      </aside>
+    </main>
+
+    <footer>© <span id="year"></span> BANGSAFE — Demo by Mohammad Sheikh Samir</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
